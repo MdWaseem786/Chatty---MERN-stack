@@ -12,3 +12,6 @@ models => database collections handling
 
 
 mongo pass : S7kILVJfcia1FMOO
+
+git add .
+git commit -m "Fixed bugs in registration"
