@@ -1,0 +1,14 @@
+auth.route.js ==> login / logout route
+.env {
+    port defined
+    mongodb atlas url added (before ? put database name , default:test)
+}
+
+models => database collections handling
+
+
+
+
+
+
+mongo pass : S7kILVJfcia1FMOO
