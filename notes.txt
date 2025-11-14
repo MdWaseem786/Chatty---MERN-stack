@@ -6,6 +6,7 @@ auth.route.js ==> login / logout route
 
 models => database collections handling
 
+token creation has syntax and cookie is created alongside with token...
 
 
 
