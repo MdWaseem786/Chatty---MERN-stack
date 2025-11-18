@@ -8,6 +8,9 @@ models => database collections handling
 
 token creation has syntax and cookie is created alongside with token...
 
+timestamp format : 12.10 pm
+
+getUsers but neglect login user(login user will be one guy)
 
 
 
