@@ -6,18 +6,18 @@ const messageSchema = new mongoose.Schema(
       type: mongoose.Schema.Types.ObjectId,
       ref: "User",
       required: true,
-        },
-        receiverId: {
-            type:mongoose.Schema.Types.ObjectId,
-            ref: "User",
-            required:true,
-        },
-        text: {
-            type:String,
-        },
-        image: {
-            type: String,
-        },
+    },
+    receiverId: {
+      type: mongoose.Schema.Types.ObjectId,
+      ref: "User",
+      required: true,
+    },
+    text: {
+      type: String,
+    },
+    image: {
+      type: String,
+    },
   },
   { timestamps: true }
 );

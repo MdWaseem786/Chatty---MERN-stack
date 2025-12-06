@@ -1,0 +1,35 @@
+auth.route.js ==> login / logout route
+.env {
+    port defined
+    mongodb atlas url added (before ? put database name , default:test)
+}
+
+models => database collections handling
+
+token creation has syntax and cookie is created alongside with token...
+
+timestamp format : 12.10 pm
+
+getUsers but neglect login user(login user will be one guy)
+
+cors Fixed
+
+connecting frontend with backend
+
+
+
+
+mongo pass : S7kILVJfcia1FMOO
+
+git add .
+git commit -m "Fixed bugs in registration"
+
+
+
+MONGODB_URI=mongodb+srv://mwaseem19687_db_user:S7kILVJfcia1FMOO@cluster0.spssfqk.mongodb.net/chat_db?appName=Cluster0
+PORT=5001
+JWT_SECRET=secretKey
+CLOUDINARY_CLOUD_NAME=dqjy1zu60
+CLOUDINARY_API_KEY=656421834628294
+CLOUDINARY_API_SECRET=z0kFNucycVF-C0F2IKSLLgJbt_I
+#S7kILVJfcia1FMOO

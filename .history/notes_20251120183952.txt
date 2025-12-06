@@ -1,0 +1,24 @@
+auth.route.js ==> login / logout route
+.env {
+    port defined
+    mongodb atlas url added (before ? put database name , default:test)
+}
+
+models => database collections handling
+
+token creation has syntax and cookie is created alongside with token...
+
+timestamp format : 12.10 pm
+
+getUsers but neglect login user(login user will be one guy)
+
+cors Fixed
+
+
+
+
+
+mongo pass : S7kILVJfcia1FMOO
+
+git add .
+git commit -m "Fixed bugs in registration"

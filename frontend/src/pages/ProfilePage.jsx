@@ -1,13 +1,10 @@
-import React from "react";
 import { useState } from "react";
+import { useAuthStore } from "../store/useAuthStore";
+import { Camera, Mail, User } from "lucide-react";
 
-import { Camera, User, Mail } from "lucide-react";
-import { useAuthStore } from "../store/useAuthStore.js";
-
-export const ProfilePage = () => {
-  const { authUser, updateProfile, isUpdatingProfile } = useAuthStore();
+const ProfilePage = () => {
+  const { authUser, isUpdatingProfile, updateProfile } = useAuthStore();
   const [selectedImg, setSelectedImg] = useState(null);
-
 
   const handleImageUpload = async (e) => {
     const file = e.target.files[0];
@@ -17,12 +14,11 @@ export const ProfilePage = () => {
 
     reader.readAsDataURL(file);
 
-    reader.onload = async() => {
+    reader.onload = async () => {
       const base64Image = reader.result;
       setSelectedImg(base64Image);
       await updateProfile({ profilePic: base64Image });
-
-    }
+    };
   };
 
   return (
@@ -75,7 +71,7 @@ export const ProfilePage = () => {
                 <User className="w-4 h-4" />
                 Full Name
               </div>
-              <p className="px-4 py-2.5 bg-base-200 rounded-lg border">{authUser?.fullname}</p>
+              <p className="px-4 py-2.5 bg-base-200 rounded-lg border">{authUser?.fullName}</p>
             </div>
 
             <div className="space-y-1.5">
